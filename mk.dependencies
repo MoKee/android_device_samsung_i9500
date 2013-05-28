@@ -1,0 +1,12 @@
+[
+    {
+        "repository": "MoKee/android_kernel_samsung_exynos5410",
+        "target_path": "kernel/samsung/exynos5410",
+        "branch": "jb-mr1_mkt"
+    },
+    {
+        "repository": "MoKee/android_vendor_samsung_i9500",
+        "target_path": "vendor/samsung/i9500",
+        "branch": "jb-mr1_mkt"
+    },
+]

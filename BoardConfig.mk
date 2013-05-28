@@ -56,3 +56,7 @@ BOARD_HAS_NO_SELECT_BUTTON := true
 
 # inherit from the proprietary version
 -include vendor/samsung/i9500/BoardConfigVendor.mk
+
+ifdef MK_RELEASE
+WITH_DEXPREOPT := true
+endif
