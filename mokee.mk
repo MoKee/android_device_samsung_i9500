@@ -1,12 +1,12 @@
 $(call inherit-product, device/samsung/i9500/full_i9500.mk)
 
-# Inherit some common MoKee stuff
+# Inherit some common MK stuff
 $(call inherit-product, vendor/mk/config/gsm.mk)
 
 # Enhanced NFC
 $(call inherit-product, vendor/mk/config/nfc_enhanced.mk)
 
-# Inherit some common MoKee stuff.
+# Inherit some common MK stuff.
 $(call inherit-product, vendor/mk/config/common_full_phone.mk)
 
 PRODUCT_NAME := mk_i9500
