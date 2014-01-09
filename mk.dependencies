@@ -1,9 +1,7 @@
 [
     {
         "repository": "android_packages_apps_SamsungServiceMode",
-        "target_path": "packages/apps/SamsungServiceMode",
-        "branch": "cm-11.0",
-        "remote": "cyanogen"
+        "target_path": "packages/apps/SamsungServiceMode"
     },
     {
         "repository": "android_hardware_samsung",
