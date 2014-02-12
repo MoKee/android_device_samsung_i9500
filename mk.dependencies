@@ -26,5 +26,9 @@
     {
         "repository": "android_kernel_samsung_exynos5410",
         "target_path": "kernel/samsung/exynos5410"
+    },
+    {
+        "repository": "android_vendor_samsung_i9500",
+        "target_path": "vendor/samsung/i9500"
     }
 ]
