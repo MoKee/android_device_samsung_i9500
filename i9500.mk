@@ -92,6 +92,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     keystore.exynos5
 
+PRODUCT_TAGS += dalvik.gc.type-precise
+
 # Lights
 PRODUCT_PACKAGES += \
     lights.universal5410
@@ -159,6 +161,15 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.cwm.enable_key_repeat=true \
     ro.cwm.repeatable_keys=114,115
+
+# Props from Samsung ROM
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.ril.hsxpa=1 \
+    ro.ril.gprsclass=10
+
+# dex-opt to cache
+PRODUCT_PROPERTY_OVERRIDES += \
+    dalvik.vm.dexopt-data-only=0
 
 # System properties
 PRODUCT_PROPERTY_OVERRIDES += \
