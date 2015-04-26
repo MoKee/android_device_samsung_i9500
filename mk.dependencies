@@ -1,5 +1,9 @@
 [
     {
+        "repository": "android_vendor_samsung_i9500",
+        "target_path": "vendor/samsung/i9500"
+    },
+    {
         "repository": "android_packages_apps_SamsungServiceMode",
         "target_path": "packages/apps/SamsungServiceMode"
     },
