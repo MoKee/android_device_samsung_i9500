@@ -44,7 +44,7 @@ TARGET_CPU_VARIANT := cortex-a15
 # Kernel
 BOARD_KERNEL_BASE := 0x10000000
 BOARD_KERNEL_PAGESIZE := 2048
-TARGET_KERNEL_CONFIG := cyanogenmod_i9500_defconfig
+TARGET_KERNEL_CONFIG := mokee_i9500_defconfig
 TARGET_KERNEL_SOURCE := kernel/samsung/exynos5410
 
 # ANT+
@@ -80,8 +80,8 @@ BLUE_LED_PATH := "/sys/class/leds/led_b/brightness"
 BACKLIGHT_PATH := "/sys/class/backlight/panel/brightness"
 CHARGING_ENABLED_PATH := "/sys/class/power_supply/battery/batt_lp_charging"
 
-# CMHW
-BOARD_HARDWARE_CLASS := hardware/samsung/cmhw
+# MKHW
+BOARD_HARDWARE_CLASS := hardware/samsung/mkhw
 
 # Filesystems
 BOARD_BOOTIMAGE_PARTITION_SIZE := 8388608
