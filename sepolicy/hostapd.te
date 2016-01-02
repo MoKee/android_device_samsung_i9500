@@ -1,0 +1,2 @@
+allow hostapd rfkill_device:chr_file { read open };
+allow hostapd wpa_efs_file:file { read open };

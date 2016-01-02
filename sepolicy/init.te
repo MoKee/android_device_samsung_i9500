@@ -1,0 +1,5 @@
+allow init block_device:lnk_file { setattr };
+allow init emmcblk_device:blk_file rw_file_perms;
+allow init tmpfs:lnk_file create_file_perms;
+allow init kernel:system syslog_read;
+allow init shell_data_file:lnk_file getattr;

@@ -1,0 +1,2 @@
+allow zygote input_device:chr_file { read write open };
+allow zygote input_device:dir { read open };

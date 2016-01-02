@@ -2,28 +2,51 @@
 # system.prop for i9500
 #
 
-# Audio
-af.fast_track_multiplier=1
-audio.offload.disable=1
+## Graphics ##
 
-# Camera
-camera2.portability.force_api=1
-
-# Graphics
-ro.opengles.version=131072
-ro.sf.lcd_density=480
+# Disable GL Library Preload
 ro.zygote.disable_gl_preload=1
 
-# NFC
-nfc.app_log_level=2
+# Disable HDCP by default
+persist.hdmi.hdcp_enabled=false
+persist.sys.hdcp_checking=never
 
-# OTG
-persist.sys.isUsbOtgEnabled=true
+## NFC ##
 
-# Radio
+# Reduce Debug Level
+nfc.app_log_level=0
+
+## OTA Updates ##
+
+# ROM Manifest
+ro.ota.manifest=https://raw.githubusercontent.com/GearCM/android_device_samsung_i9500/cm-12.1/ota.xml
+
+# ROM Name
+ro.ota.romname=GearCM121
+
+# ROM Version
+ro.ota.version=20151212
+
+## Radio ##
+
+# Samsung RIL Config
 rild.libargs=-d /dev/ttyS0
 rild.libpath=/system/lib/libsec-ril.so
-ro.telephony.ril_class=ExynosXMM6360RIL
+ro.ril.qanelements=6
 
-# WiFi
-wifi.interface=wlan0
+# Max Supported GPRS/EDGE Category
+ro.ril.gprsclass=12
+
+# Max Supported HSDPA Category
+ro.ril.hsdpa.category=24
+
+# Max Supported HSUPA Category
+ro.ril.hsupa.category=6
+
+# Enable HSPA+ 42 Mbps
+ro.ril.hsxpa=3
+
+## Screen ##
+
+# 1080p Screen Density
+ro.sf.lcd_density=480
